@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://unpkg.com/papercss@1.9.2/dist/paper.min.css" />
+    <title>Phineas y Ferb</title>
+    <style>
+        body {
+            background-image: url("img/phineas-and-ferb-raising-perry-6xq72lguvixf9vwu.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+
+            .paper.container {
+                background: rgb(209, 184, 114);
+                padding: 20px;
+                border-radius: 10px;
+            }
+
+            nav.fixed.split-nav {
+                background-color: #29b0dd;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="fixed split-nav">
+        <div class="nav-brand">
+            <h3><a href="#">Phineas y Ferb</a></h3>
+        </div>
+        <div class="collapsible">
+            <input id="collapsible1" type="checkbox" name="collapsible1">
+            <label for="collapsible1">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </label>
+            <div class="collapsible-body">
+                <ul class="inline">
+                    <li><a href="#historia">Historia</a></li>
+                    <li><a href="#proceso">Proceso</a></li>
+                    <li><a href="#integrante">Integrante</a></li>
+                    <li><a href="#personajes">Personajes</a></li>
+                    <li><a href="#jugar">Jugar</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="paper container">
+        <div class="row">
+            <div>
+                <article class="article">
+                    <h3 class="article-title" id="historia">Historia</h3>
+                    <p class="text-lead">En esta aventura gráfica vivís un día en el que nada es normal… aunque empieza
+                        como cualquier otro. Phineas, Ferb y Perry se preguntan qué hacer, y a partir de esa simple
+                        decisión se abre un mundo de posibilidades. Inventos que salen demasiado bien, secretos que no
+                        deberían descubrirse y experimentos que se vuelven inmanejables forman parte del viaje.
+
+                        Cada elección redefine el rumbo de la historia: podés desencadenar misiones inesperadas, desatar
+                        el caos en el barrio o transformar completamente el día con ideas imposibles. El juego no te
+                        guía: sos vos quien decide qué construir, qué riesgos tomar y qué final obtener.
+
+                        Una experiencia interactiva donde la creatividad impulsa la trama, el humor acompaña cada
+                        decisión y todo puede cambiar con un solo clic.
+                    </p>
+                    <img src="img/phineas-y-ferb.jpg" alt="" class="no-border">
+                </article>
+            </div>
+            <div>
+                <h3 id="proceso">Ver proceso</h3>
+                <p>Este user flow resume cómo se construyó la estructura de la aventura
+                    gráfica: se mapearon las decisiones principales, sus ramificaciones y los posibles finales
+                    para entender cómo progresa la historia según cada elección. Su propósito es definir de
+                    manera clara el recorrido del jugador y asegurar que la narrativa avance de forma lógica,
+                    dinámica y fácil de experimentar.</p>
+                <div class="row flex-spaces child-borders">
+                    <label class="paper-btn margin" for="modal-1">Diagrama</label>
+                </div>
+                <input class="modal-state" id="modal-1" type="checkbox">
+                <div class="modal">
+                    <label class="modal-bg" for="modal-1"></label>
+                    <div class="modal-body">
+                        <label class="btn-close" for="modal-1">X</label>
+                        <img src="img/mapa.png" alt="" class="no-border">
+
+                        <label for="modal-1">Nice!</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3 id="personajes">personajes</h3>
+        <div class="row">
+            <div class="md-4 sm-12 col">
+                <div class="card">
+                    <img src="img/Phineas_Image_Proposition_5 (1).webp" alt="Card example image">
+                    <div class="card-body">
+                        <h4 class="card-title">PHINEAS</h4>
+                        <h5 class="card-subtitle">Sobre el</h5>
+                        <p class="card-text">Phineas Flynn es el motor creativo de la serie. Siempre tiene una idea
+                            nueva, desde máquinas imposibles hasta proyectos gigantescos que transforman todo el barrio.
+                            Su curiosidad y entusiasmo marcan el ritmo de cada episodio, impulsando aventuras que
+                            desafían la lógica pero siempre mantienen el espíritu divertido del show.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="md-4 sm-12 col">
+                <div class="card">
+                    <img src="img/ferb.jpg" alt="Card example image">
+                    <div class="card-body">
+                        <h4 class="card-title">FERB</h4>
+                        <h5 class="card-subtitle">Sobre el</h5>
+                        <p class="card-text">Ferb Fletcher es el hermano callado pero brillantísimo de la serie. Aunque
+                            casi nunca habla, su presencia es fundamental: es quien diseña, construye y perfecciona cada
+                            invento que Phineas imagina. Su talento técnico y su precisión lo convierten en el verdadero
+                            arquitecto detrás de todas las aventuras. Siempre mantiene su bondad en el show</p>
+                    </div>
+                </div>
+            </div>
+            <div class="md-4 sm-12 col">
+                <div class="card">
+                    <img src="img/CANDANCE.jpg" alt="Card example image">
+                    <div class="card-body">
+                        <h4 class="card-title">CANDANCE</h4>
+                        <h5 class="card-subtitle">Sobre ella</h5>
+                        <p class="card-text">Candace Flynn es la hermana mayor obsesionada con “atrapar” a Phineas y
+                            Ferb. Pasa la serie intentando demostrarle a su mamá las extravagantes creaciones de sus
+                            hermanos, pero siempre llega un segundo tarde. Su mezcla de frustración, determinación y
+                            humor la convierten en uno de los personajes más característicos del show.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="md-4 sm-10 col">
+                <img src="img/image.jpg" alt="" class="no-border">
+            </div>
+            <div class="md-6 sm-8 col">
+                <h5 id="integrante">INFORMACION SOBRE EL INTEGRANTE</h5>
+                <p>Mi nombre es Julián Palavecino, de la comisión N°2.
+                    Soy estudiante de Diseño Multimedial y trabajo en el Ministerio de Educación.
+                    Espero que puedan disfrutar de esta experiencia tanto como la disfruté yo a lo largo del
+                    cuatrimestre. Muchas gracias</p>
+            </div>
+        </div>
+
+        <article>
+            <div id="jugar" class="row flex-spaces child-borders">
+                <label class="paper-btn margin" for="modal-2">¡Jugar!</label>
+            </div>
+            <input class="modal-state" id="modal-2" type="checkbox" />
+            <div class="modal">
+                <label class="modal-bg" for="modal-2"></label>
+                <div class="modal-body">
+                    <label class="btn-close" for="modal-2">X</label>
+                    <iframe src="tpfinalparte1/index.html" frameborder="0" width="640" height="480"></iframe>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener("click", function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute("href")).scrollIntoView({
+                    behavior: "smooth"
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
